@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/App.js",
-    "build": "tsc -p ."
+    "start": "node dist/app.js",
+    "dev": "nodemon -w './**/*.ts' --exec 'ts-node' src/app.ts",
+    "build": "tsc -p .",
+    "lint": "eslint . --ext .ts --fix"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,8 @@
   "homepage": "https://github.com/etejedaw/enquecine-node-backend#readme",
   "devDependencies": {
     "@types/express": "^4.17.14",
+    "@types/request": "^2.48.8",
+    "@types/request-promise": "^4.1.48",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "eslint": "^8.27.0",
@@ -37,6 +41,8 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.7.2"
+    "mongoose": "^6.7.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
   }
 }
