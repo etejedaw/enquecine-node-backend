@@ -17,7 +17,7 @@ async function main(): Promise<void> {
 			DB_PASSWORD: configuration.get(ConfigurationEnum.DB_PASSWORD)
 		});
 		await mongoDb.connect();
-		console.log("Database in port 27018");
+		console.log("Database in port 27017");
 	} catch (error) {
 		console.log(error);
 	}
