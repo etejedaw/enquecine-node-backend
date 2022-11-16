@@ -8,3 +8,4 @@ class Cheerio implements ScrapeHtml {
 }
 
 export default Cheerio;
+export { CheerioAPI };
