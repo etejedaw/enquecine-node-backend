@@ -1,49 +1,55 @@
 {
-  "name": "enquecine-node-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon -w './**/*.ts' --exec 'ts-node' src/app.ts",
-    "build": "tsc -p .",
-    "lint": "eslint . --ext .ts --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/etejedaw/enquecine-node-backend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/etejedaw/enquecine-node-backend/issues"
-  },
-  "homepage": "https://github.com/etejedaw/enquecine-node-backend#readme",
-  "devDependencies": {
-    "@types/express": "^4.17.14",
-    "@types/request": "^2.48.8",
-    "@types/request-promise": "^4.1.48",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
-    "eslint": "^8.27.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-with-typescript": "^23.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.5.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "nodemon": "^2.0.20",
-    "prettier": "2.7.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
-  },
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "mongoose": "^6.7.2",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.6"
-  }
+	"name": "enquecine-node-backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node dist/app.js",
+		"dev": "nodemon -w './**/*.ts' --exec 'ts-node' src/app.ts",
+		"build": "tsc -p .",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"prettier": "prettier --write src/**/*.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/etejedaw/enquecine-node-backend.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/etejedaw/enquecine-node-backend/issues"
+	},
+	"homepage": "https://github.com/etejedaw/enquecine-node-backend#readme",
+	"devDependencies": {
+		"@types/express": "^4.17.14",
+		"@types/jest": "^29.2.3",
+		"@types/request": "^2.48.8",
+		"@types/request-promise": "^4.1.48",
+		"@typescript-eslint/eslint-plugin": "^5.42.1",
+		"@typescript-eslint/parser": "^5.42.1",
+		"eslint": "^8.27.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-config-standard-with-typescript": "^23.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.5.1",
+		"eslint-plugin-promise": "^6.1.1",
+		"jest": "^29.3.1",
+		"nodemon": "^2.0.20",
+		"prettier": "2.7.1",
+		"ts-jest": "^29.0.3",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.12",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"mongoose": "^6.7.2",
+		"request": "^2.88.2",
+		"request-promise": "^4.2.6"
+	}
 }
